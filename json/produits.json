@@ -1,0 +1,8 @@
+[
+    { "id":1,"name":"tradex","quantity":20, "price":6500, "image":"", "disponible":false},
+    { "id":2,"name":"total", "quantity":20, "price":6500, "image":"", "disponible":true},
+    { "id":3,"name":"ola", "quantity":20, "price":6500, "image":"", "disponible":true},
+    { "id":4,"name":"camGaz", "quantity":20, "price":6500, "image":"", "disponible":false},
+    { "id":5,"name":"SCTM", "quantity":20, "price":6500, "image":"", "disponible":true},
+    { "id":6,"name":"olybia", "quantity":20, "price":6500, "image":"", "disponible":true}
+]

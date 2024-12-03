@@ -1,0 +1,265 @@
+
+ul{
+    gap: 30px;
+    list-style: none;
+}
+.inputSearch{
+    background-color: transparent;
+    width: 0;
+    padding: 20px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(255, 178, 178);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid rgb(1, 1, 26);
+    transition: all 1s ease-in-out;
+    box-shadow: 0 2px 3px, 0 1px 2px;
+}
+.searchIcon{
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+    transition: 1s ease-in-out;
+}
+.inputSearch{
+    position: absolute;
+    width: 0;
+    height: 40px;
+    line-height: 31px;
+    outline: 0;
+    border-radius: 15px;
+    border: none;
+}
+
+.search:focus-within,
+.search:hover{
+    background-color:whitesmoke;
+    width: 70%;
+    margin-left: -10px;
+    border-bottom: 2px solid;
+    cursor: pointer;
+    .searchIcon{
+        transition: 1s ease-in-out;
+        transform: scale(0);
+    }
+}
+.search:hover .inputSearch,
+.search:focus-within .inputSearch,
+.search:valid .inputSearch {
+    width: 100%;
+    padding-left: 40px;
+    z-index: 1;
+}
+
+div.container.pb-5{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding-top: 40px;
+    background: linear-gradient(50deg, rgb(251, 201, 205), rgb(218, 241, 255),rgb(238, 211, 255));
+}
+article .card{
+    padding: 0;
+    border: none;
+    width: 181px !important;
+    height: 228px !important;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+article .card-header{
+    height: 47px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color: #040404;
+}
+article div.petitRond{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+
+}
+.dispo{
+    background-color: red !important;
+}
+article h5{
+    margin: 0;
+    margin-left: 12px !important;
+    padding: 0;
+    color: #C8FBD8;
+    text-transform: capitalize;
+    font-weight: bolder;
+
+}
+article button.btnPanier{
+    margin: 8px ;
+    margin-right: 10px;
+    padding: 1px;
+    background-color: #FFD506;
+    box-shadow: none;
+    border: 1px solid #FFD506 !important;
+}
+article button img {
+    margin: 0;
+    padding: 0;
+}
+article .card-body{
+    background-image: url('/images/img1.jpg');
+    background-size: cover;
+    background-position: top;
+    padding: 0;
+}
+article .card-footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding-inline: 10px;
+    background-color: #FFF4C6;
+}
+article .btnInfo{
+    color: white;
+    margin: 0;
+    padding: 
+    0;
+    width: 53px !important;
+    height: 23px !important;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #8D5102;
+}
+
+article .card-footer input{
+    padding: 0;
+    margin: 0;
+    width: 48px !important;
+    height: 23px !important;
+    border: none;
+    background-color: #0E2301 !important;
+    text-align: center;
+    color: #FF9100;
+    text-shadow: inset black 0 0 5px;
+}
+article .card-footer div.input-group span{
+    width: 28px !important;
+    height: 23px !important;
+    border: none;
+    font-size: 12px !important;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #DCDCDC;
+    border-start-start-radius: 0;
+    border-end-start-radius: 0;
+}
+div.input-group{
+    width: 77px;
+}
+.popupInfo{
+    position: fixed;
+    top: 50vh;
+    width: 377px;
+    height: 511px;
+    left: 50vw;
+    padding: 17px;
+    gap: 5px;
+    background-color: #FFF8F8;
+    border-radius: 20px;
+    transform: translate(-50%,-50%);
+    z-index: 10000;
+    box-shadow: 0 2px 8px, 0 3px 16px;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height:100%;
+   background-image: url('/images/img1.jpg');
+   opacity: 80%;
+   filter: blur(10px);
+   z-index: 9999;
+}
+div.fermer button.btnFermerPopup{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 20px 0 20px !important;
+    background-color: #B90606;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+div.contour{
+    width: 331px;
+    height: 477px;
+    border: 3px solid #670000;
+    border-radius:20px ;
+    background-color: transparent;
+    padding: 21px;
+}
+div.popupInfo div.cadre{
+    gap: 10px;
+}
+div.popupInfo p{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+div.contour div div.input-group{
+    width: 100px;
+    height: 38px;
+}
+div.popupInfo p.descrip{
+    margin-top: 10px;
+    font-size: 24px !important;
+    font-weight: bold;
+}
+div.popupInfo .photo{
+    width: 109px;
+    height: 141px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background-color: white;
+}
+div.popupInfo .description{
+    width: 168px;
+    height: 141px;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background-color: white;
+}
+.ajouterPoids{
+    position: absolute;
+    top: 30.5%;
+    left: 56%;
+    font-size: 60px;
+    font-weight: bolder;
+}
+.reduirePoids{
+    position: absolute;
+    top: 40.5%;
+    left: 28%;
+    width: 20px;
+    height: 6px;
+    font-weight:1200px;
+    background-color: black;
+}
+
+body.fixed{
+    position: fixed;
+}
+.btnPopup{
+    width: max-content;
+}
+button{
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
+}
